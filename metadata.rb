@@ -7,9 +7,9 @@ recipe            "diaspora", "Diaspora Install"
 
 depends           "mysql"
 depends           "chef_handler"
-depends           "minitest-handler"
 depends           "user"
 depends           "nginx"
+depends           "minitest"
 
 %w{ centos fedora redhat amazon ubuntu }.each do |os|
   supports os
