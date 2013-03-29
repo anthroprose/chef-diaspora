@@ -35,7 +35,30 @@ My Role JSON Looks like:
    "enable_registrations" : "false",
    "require_ssl" : "false",
    "city" : "Austin",
-   "state" : "TX"
+   "state" : "TX",
+   "dependencies" : [
+		"build-essential",
+		"libxslt1.1",
+		"libxslt1-dev",
+		"libxml2",
+		"libmysqlclient-dev",
+		"libmysql-ruby",
+		"libssl-dev",
+		"libopenssl-ruby",
+		"libcurl4-openssl-dev",
+		"imagemagick",
+		"libmagickwand-dev",
+		"git-core",
+		"redis-server",
+		"libffi-dev",
+		"libffi-ruby",
+		"libsqlite3-dev",
+		"libpq-dev",
+		"libreadline5",
+		"openjdk-7-jre",
+		"nodejs",
+		"libncurses5-dev"
+	]
 }
 ```
 

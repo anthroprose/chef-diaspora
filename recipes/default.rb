@@ -3,6 +3,12 @@ node.default['diaspora']['facebook']['enable'] = config["diaspora_facebook_enabl
 node.default['diaspora']['facebook']['app_id'] = config["diaspora_facebook_app_id"]||''
 node.default['diaspora']['facebook']['secret'] = config["diaspora_facebook_secret"]||''
 
+Array(node['diaspora']['dependencies']).each do |p|
+  package p do
+    action :install
+  end
+end
+
 user_account 'diaspora' do
   comment       'diaspora'
   home          node[:diaspora][:dir]
